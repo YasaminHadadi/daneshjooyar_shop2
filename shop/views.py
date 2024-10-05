@@ -1,11 +1,10 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render
 
 
 # Create your views here.
 
 def index(request):
-   return redirect(reverse("shop:store"))
-  #  return render(request, "index.html")
+    return render(request, "index.html")
 
 def product(request):
     return render(request, "product.html")
